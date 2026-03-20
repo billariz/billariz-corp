@@ -1,0 +1,9 @@
+{
+    "properties": [
+        {
+            "name": "provider.aws",
+            "type": "com.billariz.corp.provider.aws.config.AwsProviderConfig",
+            "description": "Configuration for AWS provider"
+        }
+    ]
+}

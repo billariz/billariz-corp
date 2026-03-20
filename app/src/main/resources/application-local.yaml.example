@@ -1,0 +1,70 @@
+# ============================================================
+# Configuration locale — Copier ce fichier en application-local.yaml
+# et renseigner les valeurs pour votre environnement local
+# ============================================================
+
+logging:
+  level:
+    com.billariz: DEBUG
+    liquibase: DEBUG
+    org:
+      hibernate:
+        SQL: DEBUG
+        type.descriptor.sql: TRACE
+
+server:
+  servlet:
+    context-path: /v1/
+  port: 8080
+
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8080/v1/admin
+        username: admin
+        password: admin
+  security:
+    user:
+      name: admin
+      password: admin
+  datasource:
+    # Option 1 — Base H2 en mémoire (recommandée pour démarrer rapidement)
+    url: jdbc:h2:mem:billariz;DB_CLOSE_DELAY=-1;MODE=PostgreSQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: sa
+
+    # Option 2 — PostgreSQL local
+    # url: jdbc:postgresql://localhost:5432/billariz
+    # driver-class-name: org.postgresql.Driver
+    # username: VOTRE_USERNAME
+    # password: VOTRE_PASSWORD
+
+  jackson:
+    default-property-inclusion: non-null
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+
+  mail:
+    host: smtp.example.com
+    port: 587
+    username: VOTRE_EMAIL@example.com
+    password: VOTRE_MOT_DE_PASSE_APP
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+      default:
+        from: Billariz <noreply@example.com>
+        bcc: VOTRE_EMAIL@example.com
+
+  sql:
+    init:
+      platform: postgres

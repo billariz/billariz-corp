@@ -1,0 +1,532 @@
+databaseChangeLog:
+  - changeSet:
+      id: 4
+      author: admin
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/00-init-table.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: index
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/00-init-index.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: view
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/11-init-view.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: TR_LAUNCHER_TAG_TYPE
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table TR_LAUNCHER_TAG_TYPE n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: TR_LAUNCHER_TAG_TYPE
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM TR_LAUNCHER_TAG_TYPE"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/01-init-tr_luncher_tag_type.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: CC_ACTIVITY_TYPE
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table CC_ACTIVITY_TYPE n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: CC_ACTIVITY_TYPE
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM CC_ACTIVITY_TYPE"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/02-init-cc_activity_type.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: RF_POSTAL_CODE
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table RF_POSTAL_CODE n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: RF_POSTAL_CODE
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM RF_POSTAL_CODE"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/03-init-rf_postal_code.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: RF_GEO_FACTORS
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table RF_GEO_FACTORS n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: RF_GEO_FACTORS
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM RF_GEO_FACTORS"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/04-init-RF_GEO_FACTORS.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: RF_MARKET_GEO_REF
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table RF_MARKET_GEO_REF n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: RF_MARKET_GEO_REF
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM RF_MARKET_GEO_REF"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/05-init-RF_MARKET_GEO_REF.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: RF_CLIMATIC_REF
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table RF_CLIMATIC_REF n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: RF_CLIMATIC_REF
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM RF_CLIMATIC_REF"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/06-init-RF_CLIMATIC_REF.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: RF_COEF_A
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table RF_COEF_A n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: RF_COEF_A
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM RF_COEF_A"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/07-init-RF_COEF_A.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: BL_SQ_TYPE
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table BL_SQ_TYPE n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: BL_SQ_TYPE
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM BL_SQ_TYPE"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/08-init-bl_sq_type.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: BL_SE_TYPE
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table BL_SE_TYPE n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: BL_SE_TYPE
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM BL_SE_TYPE"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/09-init-BL_SE_TYPE.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: CC_PERIMETER_TYPE
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table CC_PERIMETER_TYPE n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: CC_PERIMETER_TYPE
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM CC_PERIMETER_TYPE"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/10-init-cc_perimeter_type.sql
+            stripComments: true
+  - changeSet:
+      id: 25
+      author: rf_parameter
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table rf_parameter n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: rf_parameter
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM rf_parameter"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/13-init-rf_parameter.sql
+            stripComments: true
+  - changeSet:
+      id: 4
+      author: tr_object_process_rules
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table tr_object_process_rules n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: tr_object_process_rules
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM tr_object_process_rules"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/12-init-tr_object_process_rules.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: bl_rate_type
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table bl_rate_type n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: bl_rate_type
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM bl_rate_type"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/25-init-bl_rate_type.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: bl_rate
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table bl_rate n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: bl_rate
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM bl_rate"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/14-init-bl_rate.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: cc_tos_type
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table cc_tos_type n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: cc_tos_type
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM cc_tos_type"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/16-init-cc_tos_type.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: cc_tos_start_option
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table cc_tos_start_option n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: cc_tos_start_option
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM cc_tos_start_option"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/17-init-cc_tos_start_option.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: cc_service_type
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table cc_service_type n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: cc_service_type
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM cc_service_type"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/18-init-cc_service_type.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: cc_service_start_option
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table cc_service_start_option n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: cc_service_start_option
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM cc_service_start_option"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/19-init-cc_service_start_option.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: bl_se_start_option
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table bl_se_start_option n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: bl_se_start_option
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM bl_se_start_option"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/15-init-bl_se_start_option.sql
+            stripComments: true
+  - changeSet:
+      id: 2
+      author: rf_reading_cycle
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table rf_reading_cycle n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: rf_reading_cycle
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM rf_reading_cycle"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/20-init-rf_reading_cycle.sql
+            stripComments: true
+  - changeSet:
+      id: 2
+      author: bl_billing_cycle
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table bl_billing_cycle n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: bl_billing_cycle
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM bl_billing_cycle"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/21-init-bl_billing_cycle.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: rf_rp_rc
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table rf_rp_rc n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: rf_rp_rc
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM rf_rp_rc"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/22-init-rf_rp_rc.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: bl_rc_bc
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table bl_rc_bc n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: bl_rc_bc
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM bl_rc_bc"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/23-init-bl_rc_bc.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: bl_billing_window
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table bl_billing_window n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: bl_billing_window
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM bl_billing_window"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/24-init-bl_billing_window.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: tr_organism
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table tr_organism n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: tr_organism
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM tr_organism"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/28-init-tr_organism.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: tr_group
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table tr_group n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: tr_group
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM tr_group"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/29-init-tr_group.sql
+            stripComments: true
+  - changeSet:
+      id: 2
+      author: tr_user
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table tr_user n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: tr_user
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM tr_user"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/30-init-tr_user.sql
+            stripComments: true
+  - changeSet:
+      id: 2
+      author: cc_event_template
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table cc_event_template n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: cc_event_template
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM cc_event_template"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/26-init-cc_event_template.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: cc_activity_template
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table cc_activity_template n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: cc_activity_template
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM cc_activity_template"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/27-init-cc_activity_template.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: tr_sequence_manager
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table tr_sequence_manager n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: tr_sequence_manager
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM tr_sequence_manager"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/31-init-tr_sequence_manager.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: bl_billable_charge_type
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table bl_billable_charge_type n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: bl_billable_charge_type
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM bl_billable_charge_type"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/32-init-bl_billable_charge_type.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: bl_article_type
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table bl_article_type n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: bl_article_type
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM bl_article_type"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/33-init-bl_article_type.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: TR_LANGUAGE_MAPPING
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table TR_LANGUAGE_MAPPING n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: TR_LANGUAGE_MAPPING
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM TR_LANGUAGE_MAPPING"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/34-init-TR_LANGUAGE_MAPPING.sql
+            stripComments: true
+  - changeSet:
+      id: 1
+      author: TR_ROLE
+      preConditions:
+        onFail: MARK_RAN
+        onFailMessage: "La table TR_ROLE n'existe pas ou contient déjà des données."
+        tableExists:
+          tableName: TR_ROLE
+        sqlCheck:
+          expectedResult: "0"
+          sql: "SELECT COUNT(*) FROM TR_ROLE"
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/35-init-permissions.sql
+            stripComments: true

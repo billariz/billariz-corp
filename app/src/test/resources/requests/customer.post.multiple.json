@@ -1,0 +1,650 @@
+{
+    "customers": [
+        {
+            "id": "CUFD6YJW8TN",
+            "language": "FR",
+            "customerType": "residential",
+            "customerCategory": "customerB2C",
+            "individual": {
+                "civility": "MR",
+                "firstName": "youcef",
+                "lastName": "HAROUN",
+                "dateOfBirth": "1975-01-10"
+            },
+            "address": {
+                "street": "306 RUE DES PYRENEES",
+                "postalCode": "75020",
+                "city": "PARIS 20",
+                "countryIso": "FR"
+            },
+            "contact": {
+                "phone1": "0677777777",
+                "email": "youcef.haroun@uppli.fr"
+            },
+            "status": "CUSTOMER",
+            "perimeters": [
+                {
+                    "customerNbr": "CUFD6YJW8TN",
+                    "startDate": "2020-12-24",
+                    "analyticCode": "EL",
+                    "perimeterType": "MONO_SITE",
+                    "actors": [
+                        {
+                            "third": {
+                                "type": "individual",
+                                "individual": {
+                                    "firstName": "Youcef",
+                                    "lastName": "Haroun"
+                                },
+                                "financialInformation": {
+                                    "paymentMode": "directDebit",
+                                    "bicCode": "TESTFRP1XXX",
+                                    "iban": "FR7600000000009913706320568",
+                                    "sepaManda": "SLMP040196600",
+                                    "status": "active"
+                                }
+                            },
+                            "role": "PAYER",
+                            "startDate": "2020-12-24"
+                        }
+                    ],
+                    "contracts": [
+                        {
+                            "id": "CTFD6YJW7VQ",
+                            "energyType": "EL",
+                            "subscriptionDate": "2020-12-11",
+                            "contractualStartDate": "2020-12-24",
+                            "status": "waiting",
+                            "billingMode": "PAYMENT_SCHEDULE",
+                            "billingFrequency": "6",
+                            "installPeriodicity": "1",
+                            "channel": "LELYNX",
+                            "seller": "WEKIWI",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        }
+                    ]
+                },
+                {
+                    "customerNbr": "CUFD6YJW8TN",
+                    "startDate": "2021-01-04",
+                    "analyticCode": "NG",
+                    "perimeterType": "MONO_SITE",
+                    "actors": [
+                        {
+                            "third": {
+                                "type": "individual",
+                                "individual": {
+                                    "firstName": "Youcef",
+                                    "lastName": "Haroun"
+                                },
+                                "financialInformation": {
+                                    "paymentMode": "directDebit",
+                                    "bicCode": "TESTFRP1XXX",
+                                    "iban": "FR7600000000009913706320568",
+                                    "sepaManda": "SLMP040196600",
+                                    "status": "active"
+                                }
+                            },
+                            "role": "PAYER",
+                            "startDate": "2021-01-04"
+                        }
+                    ],
+                    "contracts": [
+                        {
+                            "id": "CTFD6YJW9DU",
+                            "energyType": "NG",
+                            "subscriptionDate": "2020-12-11",
+                            "contractualStartDate": "2021-01-04",
+                            "status": "waiting",
+                            "billingMode": "PAYMENT_SCHEDULE",
+                            "billingFrequency": "6",
+                            "installPeriodicity": "1",
+                            "channel": "LELYNX",
+                            "seller": "WEKIWI",
+                            "serviceCategory": "COMMODITIES",
+                            "serviceSubCategory": "NG.B1",
+                            "direction": "RANKING"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "CUFYWNJENE",
+            "language": "FR",
+            "customerType": "residential",
+            "customerCategory": "customerB2C",
+            "individual": {
+                "civility": "MR",
+                "firstName": "Youcef",
+                "lastName": "Haroun",
+                "dateOfBirth": "1980-08-05"
+            },
+            "address": {
+                "street": "RUE DES PYRENEES",
+                "number": "306",
+                "postalCode": "75020",
+                "city": "PARIS 20",
+                "countryIso": "FR"
+            },
+            "contact": {
+                "phone1": "0662173968",
+                "email": "youcef.haroun@uppli.fr"
+            },
+            "status": "CUSTOMER",
+            "perimeters": [
+                {
+                    "customerNbr": "CUFYWNJENE",
+                    "startDate": "2019-05-13",
+                    "label": "PÃ©rimÃ¨tre monosite ElectricitÃ©",
+                    "analyticCode": "EL",
+                    "perimeterType": "MONO_SITE",
+                    "actors": [
+                        {
+                            "third": {
+                                "type": "individual",
+                                "individual": {
+                                    "civility": "MR",
+                                    "firstName": "Youcef",
+                                    "lastName": "Haroun"
+                                },
+                                "address": {
+                                    "street": "RUE DES PYRENEES",
+                                    "number": "306",
+                                    "postalCode": "75020",
+                                    "city": "PARIS 20",
+                                    "countryIso": "FR"
+                                },
+                                "financialInformation": {
+                                    "paymentMode": "directDebit",
+                                    "bicCode": "AXABFRPPXXX",
+                                    "iban": "FR7612548029984206708150829",
+                                    "sepaManda": "SLMP016214269",
+                                    "status": "active"
+                                }
+                            },
+                            "role": "PAYER",
+                            "startDate": "2020-05-05"
+                        }
+                    ],
+                    "contracts": [
+                        {
+                            "id": "CTFYWNJEN3",
+                            "energyType": "EL",
+                            "subscriptionDate": "2019-05-13",
+                            "contractualStartDate": "2019-05-13",
+                            "status": "effective",
+                            "billingMode": "PAYMENT_SCHEDULE",
+                            "billingFrequency": "6",
+                            "installPeriodicity": "2",
+                            "seller": "WEKIWI",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "CUFZN9G4KW",
+            "language": "FR",
+            "customerType": "professional",
+            "customerCategory": "customerB2C",
+            "individual": {
+                "civility": "MR",
+                "firstName": "Youcef",
+                "lastName": "Haroun",
+                "dateOfBirth": "1980-08-05"
+            },
+            "company": {
+                "companyName": "Uppli",
+                "legalForme": "SAS",
+                "vatable": false,
+                "naceCode": "70.22Z"
+            },
+            "address": {
+                "street": "RUE MARBEUF",
+                "number": "19",
+                "postalCode": "75008",
+                "city": "PARIS 08",
+                "countryIso": "FR"
+            },
+            "contact": {
+                "phone1": "0662173968",
+                "email": "youcef.haroun@uppli.fr"
+            },
+            "status": "CUSTOMER",
+            "perimeters": [
+                {
+                    "customerNbr": "CUFZN9G4KW",
+                    "startDate": "2019-07-21",
+                    "label": "PÃ©rimÃ¨tre monosite ElectricitÃ©",
+                    "analyticCode": "EL",
+                    "perimeterType": "MONO_SITE",
+                    "actors": [
+                        {
+                            "third": {
+                                "type": "company",
+                                "individual": {
+                                    "civility": "MR",
+                                    "firstName": "Youcef",
+                                    "lastName": "Haroun"
+                                },
+                                "company": {
+                                    "companyName": "Uppli",
+                                    "legalForme": "SAS",
+                                    "identificationNumber": "81018891200038",
+                                    "vatable": false,
+                                    "naceCode": "7022Z"
+                                },
+                                "address": {
+                                    "street": "RUE MARBEUF",
+                                    "number": "19",
+                                    "postalCode": "75008",
+                                    "city": "PARIS 08",
+                                    "countryIso": "FR"
+                                },
+                                "contact": {
+                                    "phone1": "066666666666",
+                                    "phone2": "066666666666",
+                                    "phone3": "066666666666",
+                                    "email": "youcef.haroun@uppli.fr"
+                                },
+                                "financialInformation": {
+                                    "paymentMode": "directDebit",
+                                    "bicCode": "CRLYFRPPXXX",
+                                    "iban": "FR3130002004100000447094T39",
+                                    "sepaManda": "SLMP0162218400",
+                                    "status": "ENABLED"
+                                }
+                            },
+                            "role": "PAYER",
+                            "startDate": "2020-07-09"
+                        }
+                    ],
+                    "contracts": [
+                        {
+                            "id": "CTFZN9G6M8",
+                            "energyType": "EL",
+                            "subscriptionDate": "2019-07-21",
+                            "contractualStartDate": "2019-07-21",
+                            "status": "effective",
+                            "billingMode": "CYCLICAL_BILLING",
+                            "billingFrequency": "1",
+                            "seller": "WEKIWI",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "TEST_B2B",
+            "language": "FR",
+            "customerType": "professional",
+            "customerCategory": "customerB2B",
+            "individual": {
+                "firstName": "Youcef",
+                "lastName": "HAROUN",
+                "dateOfBirth": "1993-07-28"
+            },
+            "address": {
+                "street": "4 ALLEE PEGASE",
+                "postalCode": "64140",
+                "city": "LONS",
+                "countryIso": "FR"
+            },
+            "contact": {
+                "phone1": "0662173968",
+                "email": "youcef.haroun@uppli.fr"
+            },
+            "status": "CUSTOMER",
+            "perimeters": [
+                {
+                    "customerNbr": "TEST_B2B",
+                    "startDate": "2021-07-20",
+                    "analyticCode": "EL",
+                    "perimeterType": "MULTI_SITE",
+                    "actors": [
+                        {
+                            "third": {
+                                "type": "individual",
+                                "individual": {
+                                    "firstName": "Youcef",
+                                    "lastName": "HAROUN"
+                                },
+                                "financialInformation": {
+                                    "paymentMode": "directDebit",
+                                    "bicCode": "CMCIFRPPXXX",
+                                    "iban": "FR761005719173XXXXXXXXXXXXXXXXXX",
+                                    "sepaManda": "SLMP0XXXXXXXXX",
+                                    "status": "active"
+                                }
+                            },
+                            "role": "PAYER",
+                            "startDate": "2020-11-07"
+                        }
+                    ],
+                    "contracts": [
+                        {
+                            "id": "TEST_B2B_C4",
+                            "energyType": "EL",
+                            "subscriptionDate": "2020-10-16",
+                            "contractualStartDate": "2021-07-20",
+                            "status": "waiting",
+                            "billingMode": "CYCLICAL_BILLING",
+                            "billingFrequency": "6",
+                            "channel": "UPPLI",
+                            "seller": "GY",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        },
+                        {
+                            "id": "TEST_B2B_C4_1",
+                            "energyType": "EL",
+                            "subscriptionDate": "2020-10-16",
+                            "contractualStartDate": "2021-07-20",
+                            "status": "waiting",
+                            "billingMode": "CYCLICAL_BILLING",
+                            "billingFrequency": "6",
+                            "channel": "UPPLI",
+                            "seller": "GY",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        },
+                        {
+                            "id": "TEST_B2B_C4_2",
+                            "energyType": "EL",
+                            "subscriptionDate": "2020-10-16",
+                            "contractualStartDate": "2021-07-20",
+                            "status": "waiting",
+                            "billingMode": "CYCLICAL_BILLING",
+                            "billingFrequency": "6",
+                            "channel": "UPPLI",
+                            "seller": "GY",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        },
+                        {
+                            "id": "TEST_B2B_C4_3",
+                            "energyType": "EL",
+                            "subscriptionDate": "2020-10-16",
+                            "contractualStartDate": "2021-07-20",
+                            "status": "waiting",
+                            "billingMode": "CYCLICAL_BILLING",
+                            "billingFrequency": "6",
+                            "channel": "UPPLI",
+                            "seller": "GY",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        },
+                        {
+                            "id": "TEST_B2B_C4_4",
+                            "energyType": "EL",
+                            "subscriptionDate": "2020-10-16",
+                            "contractualStartDate": "2021-07-20",
+                            "status": "waiting",
+                            "billingMode": "CYCLICAL_BILLING",
+                            "billingFrequency": "6",
+                            "channel": "UPPLI",
+                            "seller": "GY",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        },
+                        {
+                            "id": "TEST_B2B_C4_5",
+                            "energyType": "EL",
+                            "subscriptionDate": "2020-10-16",
+                            "contractualStartDate": "2021-07-20",
+                            "status": "waiting",
+                            "billingMode": "CYCLICAL_BILLING",
+                            "billingFrequency": "6",
+                            "channel": "UPPLI",
+                            "seller": "GY",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        },
+                        {
+                            "id": "TEST_B2B_C4_6",
+                            "energyType": "EL",
+                            "subscriptionDate": "2020-10-16",
+                            "contractualStartDate": "2021-07-20",
+                            "status": "waiting",
+                            "billingMode": "CYCLICAL_BILLING",
+                            "billingFrequency": "6",
+                            "channel": "UPPLI",
+                            "seller": "GY",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        },
+                        {
+                            "id": "TEST_B2B_C4_7",
+                            "energyType": "EL",
+                            "subscriptionDate": "2020-10-16",
+                            "contractualStartDate": "2021-07-20",
+                            "status": "effective",
+                            "billingMode": "CYCLICAL_BILLING",
+                            "billingFrequency": "6",
+                            "channel": "UPPLI",
+                            "seller": "GY",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        },
+                        {
+                            "id": "TEST_B2B_C4_8",
+                            "energyType": "EL",
+                            "subscriptionDate": "2020-10-16",
+                            "contractualStartDate": "2021-07-20",
+                            "status": "toInstall",
+                            "billingMode": "CYCLICAL_BILLING",
+                            "billingFrequency": "6",
+                            "channel": "UPPLI",
+                            "seller": "GY",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        },
+                        {
+                            "id": "TEST_B2B_C4_9",
+                            "energyType": "EL",
+                            "subscriptionDate": "2020-10-16",
+                            "contractualStartDate": "2021-07-20",
+                            "status": "toInstall",
+                            "billingMode": "CYCLICAL_BILLING",
+                            "billingFrequency": "6",
+                            "channel": "UPPLI",
+                            "seller": "GY",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        },
+                        {
+                            "id": "TEST_B2B_C4_10",
+                            "energyType": "EL",
+                            "subscriptionDate": "2020-10-16",
+                            "contractualStartDate": "2021-07-20",
+                            "status": "toInstall",
+                            "billingMode": "CYCLICAL_BILLING",
+                            "billingFrequency": "6",
+                            "channel": "UPPLI",
+                            "seller": "GY",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        },
+                        {
+                            "id": "TEST_B2B_C4_11",
+                            "energyType": "EL",
+                            "subscriptionDate": "2020-10-16",
+                            "contractualStartDate": "2021-07-20",
+                            "status": "toInstall",
+                            "billingMode": "CYCLICAL_BILLING",
+                            "billingFrequency": "6",
+                            "channel": "UPPLI",
+                            "seller": "GY",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        },
+                        {
+                            "id": "TEST_B2B_C4_12",
+                            "energyType": "EL",
+                            "subscriptionDate": "2020-10-16",
+                            "contractualStartDate": "2021-07-20",
+                            "status": "installed",
+                            "billingMode": "CYCLICAL_BILLING",
+                            "billingFrequency": "6",
+                            "channel": "UPPLI",
+                            "seller": "GY",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        },
+                        {
+                            "id": "TEST_B2B_C4_13",
+                            "energyType": "EL",
+                            "subscriptionDate": "2020-10-16",
+                            "contractualStartDate": "2021-07-20",
+                            "status": "toInstall",
+                            "billingMode": "CYCLICAL_BILLING",
+                            "billingFrequency": "6",
+                            "channel": "UPPLI",
+                            "seller": "GY",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        },
+                        {
+                            "id": "TEST_B2B_C4_14",
+                            "energyType": "EL",
+                            "subscriptionDate": "2020-10-16",
+                            "contractualStartDate": "2021-07-20",
+                            "status": "effective",
+                            "billingMode": "CYCLICAL_BILLING",
+                            "billingFrequency": "6",
+                            "channel": "UPPLI",
+                            "seller": "GY",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        },
+                        {
+                            "id": "TEST_B2B_C4_15",
+                            "energyType": "EL",
+                            "subscriptionDate": "2020-10-16",
+                            "contractualStartDate": "2021-07-20",
+                            "status": "effective",
+                            "billingMode": "CYCLICAL_BILLING",
+                            "billingFrequency": "6",
+                            "channel": "UPPLI",
+                            "seller": "GY",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        },
+                        {
+                            "id": "TEST_B2B_C4_16",
+                            "energyType": "EL",
+                            "subscriptionDate": "2020-10-16",
+                            "contractualStartDate": "2021-07-20",
+                            "status": "effective",
+                            "billingMode": "CYCLICAL_BILLING",
+                            "billingFrequency": "6",
+                            "channel": "UPPLI",
+                            "seller": "GY",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        },
+                        {
+                            "id": "TEST_B2B_C3_17",
+                            "energyType": "EL",
+                            "subscriptionDate": "2020-10-16",
+                            "contractualStartDate": "2021-07-01",
+                            "status": "effective",
+                            "billingMode": "CYCLICAL_BILLING",
+                            "billingFrequency": "12",
+                            "channel": "UPPLI",
+                            "seller": "GY",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        },
+                        {
+                            "id": "TEST_B2B_C4_18",
+                            "energyType": "EL",
+                            "subscriptionDate": "2020-10-16",
+                            "contractualStartDate": "2021-07-01",
+                            "status": "toInstall",
+                            "billingMode": "CYCLICAL_BILLING",
+                            "billingFrequency": "12",
+                            "channel": "UPPLI",
+                            "seller": "GY",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        },
+                        {
+                            "id": "TEST_B2B_C2_18",
+                            "energyType": "EL",
+                            "subscriptionDate": "2020-10-16",
+                            "contractualStartDate": "2021-07-01",
+                            "status": "effective",
+                            "billingMode": "CYCLICAL_BILLING",
+                            "billingFrequency": "12",
+                            "channel": "UPPLI",
+                            "seller": "GY",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        },
+                        {
+                            "id": "TEST_B2B_C5_20",
+                            "energyType": "EL",
+                            "subscriptionDate": "2020-10-16",
+                            "contractualStartDate": "2021-07-05",
+                            "status": "effective",
+                            "billingMode": "CYCLICAL_BILLING",
+                            "billingFrequency": "2",
+                            "channel": "UPPLI",
+                            "seller": "GY",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        }
+                    ]
+                },
+                {
+                    "customerNbr": "TEST_B2B",
+                    "startDate": "2021-02-01",
+                    "analyticCode": "NG",
+                    "perimeterType": "MULTI_SITE",
+                    "actors": [
+                        {
+                            "third": {
+                                "type": "individual",
+                                "individual": {
+                                    "firstName": "Youcef",
+                                    "lastName": "HAROUN"
+                                },
+                                "financialInformation": {
+                                    "paymentMode": "directDebit",
+                                    "bicCode": "CMCIFRPPXXX",
+                                    "iban": "FR761005719173XXXXXXXXXXXXXXXXXX",
+                                    "sepaManda": "SLMP0XXXXXXXXX",
+                                    "status": "active"
+                                }
+                            },
+                            "role": "PAYER",
+                            "startDate": "2020-11-07"
+                        }
+                    ],
+                    "contracts": [
+                        {
+                            "id": "TEST_B2B_T2_NG1",
+                            "energyType": "NG",
+                            "subscriptionDate": "2020-10-16",
+                            "contractualStartDate": "2021-02-01",
+                            "status": "effective",
+                            "billingMode": "CYCLICAL_BILLING",
+                            "billingFrequency": "6",
+                            "channel": "UPPLI",
+                            "seller": "GY",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+[Billariz - DEV] Accès à votre interface dédiée - [[${user_first_name}]] [[${user_last_name}]]

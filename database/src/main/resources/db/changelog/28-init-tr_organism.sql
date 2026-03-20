@@ -1,0 +1,2 @@
+INSERT INTO public.cc_company (companyname, legalformcode, identificationid, vatid, vatable, nacecode) VALUES ('Billariz', 'SAS', ' ', ' ', false, '7022Z');
+INSERT INTO public.tr_organism (companyid, ismaster, masterorganismid, category, subcategory, defaultlabel, standardlabel, otherlabel, description, picture) VALUES (1, true, NULL, 'BUSINESS_OWNER', 'RECOVERY', 'Billariz', 'Billariz', NULL, 'Billariz', 'https://img.freepik.com/psd-gratuit/illustration-3d-avatar-profil-humain_23-2150671136.jpg');

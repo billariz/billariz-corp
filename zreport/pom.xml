@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.billariz.corp</groupId>
+		<artifactId>parent</artifactId>
+		<version>${version}</version>
+	</parent>
+	
+	<artifactId>zreport</artifactId>
+	<version>${version}</version>
+	<packaging>jar</packaging>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>${jacoco.version}</version>
+				<executions>
+					<execution>
+						<id>jacoco-report-aggregate</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>report-aggregate</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.billariz.corp</groupId>
+			<artifactId>app</artifactId>
+			<version>${version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.billariz.corp</groupId>
+			<artifactId>database</artifactId>
+			<version>${version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.billariz.corp</groupId>
+			<artifactId>launcher</artifactId>
+			<version>${version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.billariz.corp</groupId>
+			<artifactId>notifier</artifactId>
+			<version>${version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.billariz.corp</groupId>
+			<artifactId>provider</artifactId>
+			<version>${version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.billariz.corp</groupId>
+			<artifactId>provider-aws</artifactId>
+			<version>${version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.billariz.corp</groupId>
+			<artifactId>provider-local</artifactId>
+			<version>${version}</version>
+		</dependency>
+	</dependencies>
+</project>

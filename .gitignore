@@ -1,0 +1,75 @@
+# ===========================
+# Build outputs
+# ===========================
+*/target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# ===========================
+# Secrets & configuration locale
+# ===========================
+application-local.yaml
+application-local.yml
+application-env-dev.yaml
+application-env-dev.yml
+application-provider-aws.yaml
+application-provider-aws.yml
+application-dapowa.yaml
+application-dapowa.yml
+.env
+.env.*
+!.env.example
+
+# ===========================
+# Terraform (infra AWS — non publiée)
+# ===========================
+terraform/
+.terraform/
+.terraform.lock.hcl
+*.tfvars
+*.tfvars.json
+planfile.json
+planfile.tfplan
+terraform_output.txt
+
+# ===========================
+# Données locales
+# ===========================
+**/__local_data__/
+*.h2.*.db
+
+# ===========================
+# IDE
+# ===========================
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# ===========================
+# OS
+# ===========================
+.DS_Store
+Thumbs.db
+
+# GitHub Actions workflows (CI/CD interne)
+.github/

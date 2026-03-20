@@ -1,0 +1,67 @@
+logging:
+  level:
+    root: INFO
+spring:
+  application:
+    name: @project.name@
+  messages:
+    basename: i18n/messages
+    encoding: UTF-8
+  boot:
+    admin:
+      context-path: /admin
+      client:
+        url: http://localhost:8080/admin
+  data:
+    rest:
+      detection-strategy: annotated
+      default-page-size: 10
+      max-page-size: 25
+  datasource:
+    url: jdbc:postgresql://localhost:5432/root
+    username: root
+    password: root
+  liquibase:
+    enabled: true
+    change-log: classpath:/db/db-changelog.yaml
+  jpa:
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL95Dialect
+info:
+  tags:
+    build-reference: @build.reference@
+    build-revision: @build.revision@
+    version: @project.version@
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        exclude: heapdump
+  endpoint:
+    health:
+      show-details: always
+  health:
+    mail:
+      enabled: false
+  info:
+    build.enabled: true
+    defaults.enabled: true
+    env.enabled: true
+    java.enabled: true
+    os.enabled: true
+
+server:
+  servlet:
+    encoding:
+      force-response: true
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: never

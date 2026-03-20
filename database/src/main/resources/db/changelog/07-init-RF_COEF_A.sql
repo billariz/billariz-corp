@@ -1,0 +1,4 @@
+INSERT INTO public.RF_COEF_A (id,startDate,endDate,tgoCode,dgoCode,energyNature,coef_A) VALUES (5,'2020-04-01','2023-04-01','GRTGAZ','GRDF','H','1.007');
+INSERT INTO public.RF_COEF_A (id,startDate,endDate,tgoCode,dgoCode,energyNature,coef_A) VALUES (6,'2020-04-01','2023-04-01','GRTGAZ','STBG','H','0.982');
+INSERT INTO public.RF_COEF_A (id,startDate,endDate,tgoCode,dgoCode,energyNature,coef_A) VALUES (7,'2020-04-01','2023-04-01','TEREGA','GRDF','H','1.166');
+INSERT INTO public.RF_COEF_A (id,startDate,endDate,tgoCode,dgoCode,energyNature,coef_A) VALUES (8,'2020-04-01','2023-04-01','TEREGA','GDBX','H','1.095');

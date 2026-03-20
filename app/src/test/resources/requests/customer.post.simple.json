@@ -1,0 +1,206 @@
+{
+    "customers": [
+        {
+            "id": "CUFDTAUDN3J",
+            "language": "FR",
+            "customerType": "professional",
+            "customerCategory": "customerB2C",
+            "individual": {
+                "civility": "MR",
+                "firstName": "autocompletetrois",
+                "lastName": "TEST",
+                "dateOfBirth": "1988-09-15"
+            },
+            "company": {
+                "companyName": "Autocomplete",
+                "legalForme": "SAS",
+                "identificationNumber": "53008580200037",
+                "naceCode": "7312Z"
+            },
+            "address": {
+                "street": "rue Vaugirard",
+                "number": "75",
+                "postalCode": "75015",
+                "city": "PARIS 15",
+                "countryIso": "FR"
+            },
+            "contact": {
+                "phone1": "0738299992",
+                "email": "completetrois@huifbr.nchbhhh"
+            },
+            "status": "CUSTOMER",
+            "perimeters": [
+                {
+                    "startDate": "2020-11-06",
+                    "analyticCode": "EL",
+                    "perimeterType": "MONO_SITE",
+                    "actors": [
+                        {
+                            "third": {
+                                "type": "individual",
+                                "individual": {
+                                    "firstName": "AutocompleteTrois",
+                                    "lastName": "Test"
+                                },
+                                "financialInformation": {
+                                    "paymentMode": "directDebit",
+                                    "bicCode": "TESTFRP1XXX",
+                                    "iban": "FR7600000000009797368893231",
+                                    "sepaManda": "SLMP040185953",
+                                    "status": "active"
+                                }
+                            },
+                            "role": "PAYER",
+                            "startDate": "2020-11-06"
+                        }
+                    ],
+                    "contracts": [
+                        {
+                            "id": "CTFDTAUDO74",
+                            "energyType": "EL",
+                            "subscriptionDate": "2020-10-06",
+                            "contractualStartDate": "2020-11-06",
+                            "status": "waiting",
+                            "billingMode": "PAYMENT_SCHEDULE",
+                            "billingFrequency": "6",
+                            "installPeriodicity": "2",
+                            "channel": "WEB",
+                            "seller": "WEKIWI",
+                            "serviceCategory": "COMMODITIES",
+                            "direction": "RANKING",
+                            "listPointOfService": [
+                                {
+                                    "posId": "07470622260166",
+                                    "state": "IN_USE",
+                                    "deliveryStatus": "ACTIVE",
+                                    "address": {
+                                        "street": "19 RUE MARBEUF",
+                                        "postalCode": "75008",
+                                        "city": "PARIS 08",
+                                        "countryIso": "FR"
+                                    },
+                                    "posConfiguration": {
+                                        "gridRate": "BTINFCUST",
+                                        "profile": "PRO1",
+                                        "posCategory": "C5",
+                                        "readingFrequency": "UNKNOWN",
+                                        "posId": "07470622260166",
+                                        "startDate": "2020-11-06",
+                                        "source": "MARKET",
+                                        "status": "INITIAL",
+                                        "touGroup": "TOTAL_HOUR",
+                                        "contractNumber": "CTFDTAUDO74"
+                                    },
+                                    "capacities": [
+                                        {
+                                            "posId": "07470622260166",
+                                            "startDate": "2020-11-06",
+                                            "tou": "TOTAL_HOUR",
+                                            "value": "15",
+                                            "unit": "kVA",
+                                            "capacityType": "POWER",
+                                            "contractNumber": "CTFDTAUDO74",
+                                            "source": "MARKET",
+                                            "status": "INITIAL"
+                                        }
+                                    ],
+                                    "estimates": [
+                                        {
+                                            "posId": "07470622260166",
+                                            "startDate": "2020-11-06",
+                                            "tou": "TOTAL_HOUR",
+                                            "value": "1373",
+                                            "unit": "kWh",
+                                            "estimateType": "SUPPLIER_ESTIMATE",
+                                            "contractNumber": "CTFDTAUDO74",
+                                            "source": "MARKET",
+                                            "status": "INITIAL"
+                                        }
+                                    ],
+                                    "meter": {
+                                        "posId": "07470622260166",
+                                        "startDate": "2020-11-06",
+                                        "meterNumber": "078",
+                                        "meterType": "SMART",
+                                        "smartMeterStatus": "INACTIVE",
+                                        "contractNumber": "CTFDTAUDO74"
+                                    },
+                                    "process": {
+                                        "type": "MOVE_IN",
+                                        "touGroup": "TOTAL_HOUR",
+                                        "express": false,
+                                        "appointmentTimeslot": "DAY"
+                                    },
+                                    "tgoCode": "RTE",
+                                    "dgoCode": "ENEDIS",
+                                    "direction": "RANKING"
+                                }
+                            ],
+                            "subscribedServicesCodes": [
+                                {
+                                    "contractNumber": "CTFDTAUDO74",
+                                    "serviceType": "WKW_EL_FIX_THR (BASE)",
+                                    "startDate": "2020-11-06",
+                                    "status": "initialized"
+                                },
+                                {
+                                    "contractNumber": "CTFDTAUDO74",
+                                    "serviceType": "PP_FREQ_2",
+                                    "startDate": "2020-11-06",
+                                    "status": "initialized"
+                                },
+                                {
+                                    "contractNumber": "CTFDTAUDO74",
+                                    "serviceType": "SAVE_TREE",
+                                    "startDate": "2020-11-06",
+                                    "status": "initialized"
+                                },
+                                {
+                                    "contractNumber": "CTFDTAUDO74",
+                                    "serviceType": "EL_DIGITAL",
+                                    "startDate": "2020-11-06",
+                                    "status": "initialized"
+                                },
+                                {
+                                    "contractNumber": "CTFDTAUDO74",
+                                    "serviceType": "EL_THRESHOLD",
+                                    "startDate": "2020-11-06",
+                                    "status": "initialized"
+                                },
+                                {
+                                    "contractNumber": "CTFDTAUDO74",
+                                    "serviceType": "GREEN",
+                                    "startDate": "2020-11-06",
+                                    "status": "initialized"
+                                },
+                                {
+                                    "contractNumber": "CTFDTAUDO74",
+                                    "serviceType": "SOCIAL_PLASTIC",
+                                    "startDate": "2020-11-06",
+                                    "status": "initialized"
+                                },
+                                {
+                                    "contractNumber": "CTFDTAUDO74",
+                                    "serviceType": "PACKAGE",
+                                    "startDate": "2020-11-06",
+                                    "touGroup": "TOTAL_HOUR",
+                                    "tou": "TOTAL_HOUR",
+                                    "amount": "15",
+                                    "treshold": {
+                                        "tresholdValue": "33",
+                                        "tresholdType": "marginalByMonth",
+                                        "tresholdBase": "consumption"
+                                    },
+                                    "factorValue": "1",
+                                    "factorType": "constant",
+                                    "rateId": "PACKAGE",
+                                    "status": "initialized"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

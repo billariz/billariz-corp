@@ -1,0 +1,1 @@
+INSERT INTO public.tr_group (organismid, "group", category, subcategory, defaultlabel, standardlabel, otherlabel, description, "authorization") VALUES (1, 'Agents', NULL, NULL, 'Utilisateurs systeme', 'System users', NULL, 'System users', NULL);
